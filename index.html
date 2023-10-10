@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("even numbers from 1 to 20 are:");
+        document.write("<br>");
+        var a=1
+        for(i=1;i<=20;i++){
+            if(i%2===0){
+                document.write(i);   
+                document.write("<br>");
+            }
+        }
+        // -------------------------------------------
+        document.write("odd numbers from 30 to 1 are:");
+        document.write("<br>");
+        var a=30;
+        while(a>=1){
+            if(a%2!=0){
+                document.write(a);
+                document.write("<br>");
+            }
+            a--;
+        }
+        
+    // --------------------------------------------------------
+    sum=0;a=1;
+    do{
+       sum=sum+a;
+       a++;
+    }
+   while(a<=10)
+   document.write("sum of 1 to 10 numbers is:"+sum);
+   document.write("<br>");
+//  ----------------------------------------------------------------------
+document.write("multiplication table of 5 ");
+document.write("<br>");
+num=5;
+for(i=1;i<=10;i++){
+    table=num*i;
+    document.write(num+ "*"+i+"="+table);
+    document.write("<br>");
+}
+    </script>
+</body>
+</html>
