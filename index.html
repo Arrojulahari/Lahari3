@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1.print multiplication tables of  each elemnt in array using map")
+        const arr=[1,2,3]
+        arr.map((ele,i)=>{
+        for(i=1;i<=10;i++){
+         console.log(`${ele}*${i}=${ele*i}`)
+        }}
+        )
+        // -------------------------------------------------------------
+        console.log("2. return the elements in an array by doubling its value using for each loop ")
+       const arr1=[1,2,3,4,5]
+       arr1.forEach((x)=>{
+         console.log(x*2)
+         console.log(arr1)
+       })
+       
+        // ---------------------------------------------------------------
+        console.log("3.filter all the consonants from the array of strings")
+        const arr2=["lahari","SWATHI","LEkhana"]
+        arr2.filter((ele1)=>{
+            for(h of ele1)
+            if(h!="a"&&h!="e"&&h!="i"&&h!="o"&&h!="u"&&h!="A"&&h!="E"&&h!="I"&&h!="O"&&h!="U")
+            console.log(h) ;
+        }
+        )
+    //   -------------------------------------------------------------------------------------------------------------
+    console.log("4.return the product of elements in array using reduce")  
+    const arr3=[1,2,3,4,5]
+    const newary1=arr3.reduce((accu,item)=>{
+        // console.log(accu)
+        return item*accu;
+        
+    },1)
+    console.log(newary1)
+    // -----------------------------------------------------------------------
+    console.log("5.filter all the strings that starts with 'l' from an array")
+      const arr4=["lahari","lamp","htmll","lucknow","owl"]
+      const naray=arr4.filter((ele2)=>{
+        
+    for(h of ele2)
+        if(ele2[0]==="l")
+        return ele2
+    }
+      
+      )
+      console.log(naray)
+    //   ---------------------------------------------------------------------
+    console.log("6.find the first string that starts with 'l' in an array")
+    const arr5=["lahari","lamp","htmll","lucknow","owl"]
+      const nwaray=arr4.find((ele3)=>{
+        
+    for(h of ele3)
+        if(ele3[0]==="l")
+        return ele3
+    }
+      )
+      console.log(nwaray)
+    //   ----------------------------------------------------------------------------------
+    console.log("7.check whether given string consists of vowels or not using some")
+    const arr6=["apple","banana"]
+    const newarray2=arr6.some((ele4)=>{
+       for(m of ele4){
+        if(m=="a"||m=="e"||m=="i"||m=="o"||m=="u"||m=="A"||m=="E"||m=="I"||m=="O"||m=="U")
+        return m;
+       }
+    })
+    console.log(newarray2)
+
+    // ---------------------------------------------------------------------------------------------------------------
+    console.log("8. define the area of the circle whose radius is 2cm by using math methods")
+    var radius=2;
+    console.log(` radius of circle is : ${Math.PI*Math.pow(2,2)}`)
+    // ------------------------------------------------------------------------
+    console.log("9.round the elements of an array to its nearest greatest value ")
+    const arr7=[1.3,1.8,2.9,4.0,8.2]
+    for(item of arr7){
+        console.log(Math.ceil(item))
+    }
+    // ----------------------------------------------------------------------------------
+    console.log("10.round the elements of an array to its nearest smallest values")
+const arr8=[0.9,1.22,5.2,4.7,3,8]
+for( item2 of arr8){
+    console.log(Math.floor(item2))
+}
+    </script>
+</body>
+</html>
